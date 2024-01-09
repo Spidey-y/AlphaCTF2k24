@@ -1,0 +1,55 @@
+name: obscurity
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: crypto
+difficulty: medhard
+
+description: |
+  > i made my public key so large so that you can't factorise it
+  >[output.txt](https://drive.google.com/drive/folders/1YLcvpBZkruR0sqSyMCnXLM4sBTS52URz)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{WHO_C4R3$_4B0U7_N_1F_1_H4V3_7h3_f4c7or$}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+topics:
+  - rsa
+
+tags:
+  - rsa
+  
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"
+
+deployment:
+  autoban: false
+  egress: "allow"
+  name: obscurity
+  deployed: false
+  replicasNumber: 1
+  type: http 
+  dockerImage: obscurity
+  # If the challenge don't expose any port then leave it empty
+  containerPort: 80
+  limits:
+    cpu: 200m
+    memory: 500Mi 
+  requests:
+    cpu: 100m
+    memory: 200Mi 
+  healthCheck:
+    initialDelaySeconds: 10
+    periodSeconds: 30
+  other: 
+    # parameters of pod annotations 
+    podAnnotations: {}

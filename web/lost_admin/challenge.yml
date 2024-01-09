@@ -1,0 +1,52 @@
+name: SQLI
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: web
+difficulty: easy
+
+description: |
+  > there is no way you can enter the admin panel
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{y0u_4r3_4_SQLI_M4S73R}
+
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+connection_info: connection_info
+  
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"
+
+deployment:
+  autoban: false
+  egress: "allow"
+  name: lost_admin
+  deployed: false
+  replicasNumber: 1
+  type: http 
+  dockerImage: lost_admin
+  # If the challenge don't expose any port then leave it empty
+  containerPort: 80
+  limits:
+    cpu: 200m
+    memory: 500Mi 
+  requests:
+    cpu: 100m
+    memory: 200Mi 
+  healthCheck:
+    initialDelaySeconds: 10
+    periodSeconds: 30
+  other: 
+    # parameters of pod annotations 
+    podAnnotations: {}
+

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 1337:1337
+    environment:
+      - FLAG=AlphaCTF{y0u_4r3_4_SQLI_M4S73R}
+    restart: always

@@ -1,0 +1,1 @@
+FLAG=b'AlphaCTF{R4nd0mn3ss_1$_4n_1llu$10n_17_d03$n7_3x1$7}'
