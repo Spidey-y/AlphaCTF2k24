@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:14-alpine
 
 WORKDIR /app
 
@@ -13,4 +13,3 @@ EXPOSE 1337
 WORKDIR /app/challenge
 
 CMD ["npm", "start"]
-
