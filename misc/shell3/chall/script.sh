@@ -5,7 +5,7 @@ alpha='^[a-zA-Z]+$'
 numeric='^[0-9]+$'
 underscore='^[_]+$'
 pattern='^[a-zA-Z0-9_]+$'
-blacklist=("env" "FLAG" "set" "declare" "{")
+blacklist=("env" "FLAG" "set" "declare" "{" "<" ">")
 
 
 while true
