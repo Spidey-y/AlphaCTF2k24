@@ -1,19 +1,18 @@
-name: chunks 
+name: return
 author: F0DH1L
 author_link: https://github.com/fodhil-ben
 
 category: pwn
-difficulty: medium
+difficulty: easy
 
 description: |
-  > I wonder why people argue who is the best club in the world, isn't that obvious  
-  > PS: i recently discovered a new function called malloc i wonder how it works under the hood.
+  > a classic ret2win !
   >
   >[chall](https://drive.google.com/drive/folders/123TzFEURY75OMBM-WBg0ZqENH9D71c10)
 
   **Author** : F0DH1L
 flags:
-  - AlphaCTF{R34L_M4DR1D_4R3_7H3_B3$7_CLUB_4ND_Y0U_4R3_7H3_B3$7_PWN3R}
+  - AlphaCTF{17$_4LL_4B0U7_P01N73R$}
 type: dynamic
 value: 500
 extra:
@@ -22,3 +21,4 @@ extra:
     minimum: 50
 
 connection_info: connection_info
+ 

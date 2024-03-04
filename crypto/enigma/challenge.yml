@@ -1,0 +1,23 @@
+name: enigma
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: crypto
+difficulty: medium
+
+description: |
+  > can you solve the enigma
+  >
+  > [chall.py](https://drive.google.com/drive/folders/19HPOjMBrjLCM0pLPywLxDipWaHp36XMW)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{C0ngr4ts_Y0U_S0lv3d_7he_1337_3n1gma}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+connection_info: connection_info

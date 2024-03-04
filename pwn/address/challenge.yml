@@ -1,0 +1,23 @@
+name: Address
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: pwn
+difficulty: medium
+
+description: |
+  > we are recruiting new members to the club, can you help me add them to our database
+  >
+  >[files](https://drive.google.com/drive/folders/123TzFEURY75OMBM-WBg0ZqENH9D71c10)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{7h4nk$_f0r_0v3rwr171ng_my_4ddr3ss3s}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+connection_info: connection_info

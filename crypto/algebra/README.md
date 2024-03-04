@@ -1,12 +1,13 @@
-# obscurity
+# algebra
 
 **`Author:`** [F0DH1L](https://github.com/fodhil-ben)
 
 ## Description
-  > i made my public key so large so that you can't factorise it
+  > i wonder why we study algebra at university
 
 - **Files** 
 - [output.txt](./challenge/output.txt) 
+- [chall.py](./challenge/chall.py) 
 
 ## Solution
 

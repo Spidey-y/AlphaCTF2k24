@@ -1,0 +1,23 @@
+name: algebra
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: crypto
+difficulty: easy
+
+description: |
+  > i wonder why we study algebra at university
+  >
+  >[files](https://drive.google.com/drive/folders/1sIOE3ehVyOvkxP5WOfXFKeUYgAk7wNk_)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{ALGEBRA_1$_7h3_C0RE_0F_CRYP70}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+
