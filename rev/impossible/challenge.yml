@@ -1,0 +1,23 @@
+name: impossible
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: reverse
+difficulty: medhard
+
+description: |
+  > dont do it manually
+  > dont do it manually
+  > dont do it manually
+  >
+  >[output.txt](https://drive.google.com/drive/folders/1YLcvpBZkruR0sqSyMCnXLM4sBTS52URz)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{M4G1C_WI7h_SYMB0L1C_EXECUTION}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
