@@ -1,0 +1,26 @@
+name: visit_eat_and_rest
+author: yalatr3ch3
+author_link: https://github.com/Yassine-Latreche
+category: misc
+difficulty: easy
+description: |
+  > Last week was a really tough one, so a reset was required. I want to a friend (which took around 3 hours, but was a really overpriced) in another country. We met at the train station, then we passed the street in the first image (1), we ordered a takeaway at a Halal restaurant, then we set at a place which had several public benches (images 2_1, 2_2, 2_3).
+  > Funnily enough, the city name resembles the name of a character in a famous Video Game.
+  > Attachment : [visit_eat_and_rest.zip](https://drive.google.com/file/d/1eW3iIrSOuS6z4v4EvnbXszwLmdG38PuQ/view?usp=sharing)
+
+  **Author** : yalatr3ch3
+flags:
+  - AlphaCTF{welCOm3_t0_nY0n}type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 25
+  minimum: 50
+topics:
+  - Osint
+tags:
+  - Osint, Guessing
+
+# DO NOT CHANGE
+state: hidden
+version: "0.1"
