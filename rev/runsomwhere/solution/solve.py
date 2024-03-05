@@ -10,7 +10,7 @@ key_hex = "a22427226377cc867d51ad3f130af08ad13451de7160efa2b23076fd782de967"
 nonce_hex = "ea9f11f8dfb0ca08a8810f9e"
 
 input_file = sys.argv[1]
-output_file = f"decrypted_{input_file}"  # Replace with the desired output file path
+output_file = f"decrypted_{input_file}"
 
 with open(input_file, 'rb') as file:
     encrypted_data = file.read()
