@@ -10,7 +10,8 @@ description: |
 
   **Author** : yalatr3ch3
 flags:
-  - AlphaCTF{welCOm3_t0_nY0n}type: dynamic
+  - AlphaCTF{welCOm3_t0_nY0n}
+type: dynamic
 value: 500
 extra:
   initial: 500
