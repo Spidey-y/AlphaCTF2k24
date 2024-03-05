@@ -1,4 +1,4 @@
-# Shell3
+# Shell2
 
 **`Author:`** [j3x](https://github.com/amj3x)
 
