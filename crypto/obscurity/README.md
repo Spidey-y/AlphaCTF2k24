@@ -6,7 +6,7 @@
   > i made my public key so large so that you can't factorise it
 
 - **Files** 
-- [chall.py](./challenge/output.txt) 
+- [output.txt](./challenge/output.txt) 
 
 ## Solution
 

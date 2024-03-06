@@ -1,0 +1,17 @@
+name: "Wizzard"
+author: Adel
+category: misc
+difficulty: medium
+description: |
+  > Not everyone can be a wizzard, but you can try to be one, prove yourself and get the flag. [chall.py](https://drive.google.com/file/d/1g8h1NqAxi9plZ3p_EtsiRWLOqLzDujOo/view?usp=sharing)
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{a_wizzARd_KN0wS_H1s_Bi7W1s3_0Per4tiONs}
+connection_info: nc -v localhost 1107
+type: dynamic
+initial: 500
+decay: 30
+minimum: 50
+state: hidden
+version: "0.1"

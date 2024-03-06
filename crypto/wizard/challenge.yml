@@ -1,0 +1,22 @@
+name: wizard
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: crypto
+difficulty: medhard
+
+description: |
+  > sometimes i fear what math can do.
+  >
+  > [files](https://drive.google.com/drive/folders/1zVriPld5bMwbM_B1KCvu_Lvp1Z9dTpWv)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{m4g1c_w1th_qu4dr4t1c_res1due}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+

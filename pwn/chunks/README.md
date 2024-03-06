@@ -8,7 +8,7 @@
   > PS: i recently discovered a new function called malloc i wonder how it works under the hood.
 
 - **Files** 
-- [app.js](./challenge/chall) 
+- [chall](./challenge/chall) 
 
 ## Solution
 
