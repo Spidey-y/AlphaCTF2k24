@@ -1,4 +1,4 @@
-version: '3.8'
+version: '2'
 
 services:
   web:
@@ -9,14 +9,8 @@ services:
       - 1101:1337
     environment:
       - FLAG=AlphaCTF{y0u_4r3_4_SQLI_M4S73R}
-    deploy:
-      restart_policy:
-        condition: on-failure
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.5'
-          memory: 50M
-        reservations:
-          cpus: '0.25'
-          memory: 20M
+
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 0.5

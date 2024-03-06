@@ -8,14 +8,3 @@ services:
     image: wizzard
     environment:
       - FLAG=AlphaCTF{a_wizzARd_KN0wS_H1s_Bi7W1s3_0Per4tiONs}
-    deploy:
-      restart_policy:
-        condition: on-failure
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.5'
-          memory: 50M
-        reservations:
-          cpus: '0.25'
-          memory: 20M

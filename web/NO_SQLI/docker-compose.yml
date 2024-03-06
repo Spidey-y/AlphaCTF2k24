@@ -1,4 +1,4 @@
-version: '3.8'
+version: '2'
 services:
   web:
     build:
@@ -11,34 +11,22 @@ services:
     environment:
       - FLAG=AlphaCTF{7H3_PR0BL3M_W4S_N3V3R_1N_SQL_Y0U_JUST_h4v3_SK1LL_1SSU3S}
       - DB_URI=mongodb://database:27017/NO_SQLI
-    deploy:
-      restart_policy:
-        condition: on-failure
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.5'
-          memory: 50M
-        reservations:
-          cpus: '0.25'
-          memory: 20M
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 0.5
+
   database:
     image: mongo:latest
     volumes:
       - mongodata:/data/db
     ports:
       - 27017:27017
-    deploy:
-      restart_policy:
-        condition: on-failure
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.5'
-          memory: 50M
-        reservations:
-          cpus: '0.25'
-          memory: 20M
+    restart: always
+    mem_limit: 512M
+    mem_reservation: 128M
+    cpus: 0.75
+
 
 volumes:
   mongodata: {}

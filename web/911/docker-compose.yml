@@ -1,4 +1,4 @@
-version: '3.8'
+version: '2'
 
 services:
   web:
@@ -8,14 +8,7 @@ services:
       - FLAG="AlphaCTF{1M_rE4Dy_t0_b3_4_WEB_HacKEr_yay}"
     ports:
       - 1100:8000
-    deploy:
-      restart_policy:
-        condition: on-failure
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.5'
-          memory: 50M
-        reservations:
-          cpus: '0.25'
-          memory: 20M
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 0.5

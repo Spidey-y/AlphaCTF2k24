@@ -1,6 +1,6 @@
 #!/bin/bash
 
-folders=(web misc pwn crypto)
+folders=(web misc pwn)
 
 for folder in "${folders[@]}"; do
     if [ -d "$folder" ]; then
@@ -11,7 +11,7 @@ for folder in "${folders[@]}"; do
             if [ -f "$subfolder/docker-compose.yml" ]; then
                 echo "Found docker-compose.yml in $subfolder"
                 cd "$subfolder"
-                docker stack deploy -c docker-compose.yml "$folder-$subfolder"
+                docker-compose up --build -d
                 cd ..
             fi
         done
