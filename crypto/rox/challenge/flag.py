@@ -1,0 +1,1 @@
+flag=b'GG hacker you know how xor works here is your flag AlphaCTF{gg_x0r_1$_fun} just a padding'

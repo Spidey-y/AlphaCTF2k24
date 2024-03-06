@@ -1,0 +1,1 @@
+FLAG='AlphaCTF{C0ngr4ts_Y0U_S0lv3d_7he_1337_3n1gma}'
