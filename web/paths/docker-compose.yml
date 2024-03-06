@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  nginx:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+    restart: always
+    depends_on:
+      - php-fpm
+    links:
+      - php-fpm
+    volumes:
+      - ./challenge/:/var/www/html/
+
+    
+  php-fpm:
+    image: php:8-fpm
+    restart: always
+    expose:
+      - 9000
+    volumes:
+      - ./challenge/:/var/www/html/
