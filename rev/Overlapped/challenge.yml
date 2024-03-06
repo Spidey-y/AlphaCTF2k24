@@ -19,8 +19,8 @@ difficulty: medium
 # - make sure to prepend the description with ">"
 # - always add the author line in the description (because CTFd doesn't add the author in the challenge description)
 description: |
-  > Show me your skills in reversing.      
-
+  > Show me your skills in reversing. [here](https://drive.google.com/drive/folders/1bf92-AvkmeUnHtpBkbXCpz-cTqojZ_YY?usp=sharing)      
+  **Cynex**
 
 flags:
   # The flag should match this pattern: ^shellmates{[A-Za-z0-9_@><:\.\-\+\$#!]{12,}}$
@@ -29,7 +29,12 @@ flags:
   # 2. The string inside the flag format should be at least 12 characters long and
   #    hard to guess.
   - AlphaCTF{maTRix_M4n1PulATi0n_w1TH_CHAr_0V3Rl4pP1ng_$ucH_AWay_T0_3ncrypt}
-
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
 # image: image_name
@@ -54,16 +59,12 @@ flags:
 # Can be removed if unused
 # Accepts strings
 # tags:
-#   - 
+#   -
 #   - sandbox
 #   - js
 
 # Files to be uploaded alongside the challenge in CTFd
 # These paths are relative to the same directory where the challenge.yml file is.
-files:
-  - chall/chall
-  - chall/flag.enc
-
 # Notes are used to clarify something in the challenge for participants
-# Notes: 
+# Notes:
 #   - no need to bruteforce (for example)

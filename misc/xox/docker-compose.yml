@@ -1,8 +1,8 @@
-version: "3.3"
+version: "3.8"
 
 services:
   server:
     build:
       context: .
     ports:
-      - "2323:2323"
+      - "1308:2323"

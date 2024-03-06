@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
   nginx:
@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8080:80
-    restart: always
+      - 1103:80
+
     depends_on:
       - php-fpm
     links:
@@ -18,8 +18,8 @@ services:
     
   php-fpm:
     image: php:8-fpm
-    restart: always
     expose:
       - 9000
     volumes:
       - ./challenge/:/var/www/html/
+

@@ -1,4 +1,4 @@
-name: NO_SQLI 
+name: NO_SQLI
 author: F0DH1L
 author_link: https://github.com/fodhil-ben
 
@@ -16,38 +16,14 @@ flags:
 type: dynamic
 value: 500
 extra:
-    initial: 500
-    decay: ${DECAY} # leave it like this
-    minimum: 50
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
 
-connection_info: connection_info
-  
+connection_info: https://no_sqli.challenge.alphabit.club
+
 # DO NOT CHANGE
 
 state: hidden
 
 version: "0.1"
-
-deployment:
-  autoban: false
-  egress: "allow"
-  name: sqli
-  deployed: false
-  replicasNumber: 1
-  type: http 
-  dockerImage: sqli
-  # If the challenge don't expose any port then leave it empty
-  containerPort: 80
-  limits:
-    cpu: 200m
-    memory: 500Mi 
-  requests:
-    cpu: 100m
-    memory: 200Mi 
-  healthCheck:
-    initialDelaySeconds: 10
-    periodSeconds: 30
-  other: 
-    # parameters of pod annotations 
-    podAnnotations: {}
-

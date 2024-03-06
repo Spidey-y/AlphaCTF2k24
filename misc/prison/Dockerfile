@@ -3,7 +3,7 @@ FROM python:3-alpine
 RUN apk update && \
     apk add socat
 
-RUN useradd ctf 
+RUN adduser -D ctf 
 
 WORKDIR /challenge
 

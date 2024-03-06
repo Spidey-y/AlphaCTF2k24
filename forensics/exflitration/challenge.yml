@@ -20,9 +20,14 @@ difficulty: medium
 # - always add the author line in the description (because CTFd doesn't add the author in the challenge description)
 description: |
   > My friend challenged me to detect his secret message.   
-  > I can't find it, can you help me?  
-
-
+  > I can't find it, can you help me?
+  > [chall.pcapng](https://drive.google.com/file/d/1yxmAeOLVhGscbZX_73EwNmuFMqHuDjtK/view?usp=sharing)
+  **Author** : Cynex
+value: 500
+extra:
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
 flags:
   # The flag should match this pattern: ^shellmates{[A-Za-z0-9_@><:\.\-\+\$#!]{12,}}$
   # 1. It can have any alphanumeric characters in addition of the following
@@ -30,7 +35,6 @@ flags:
   # 2. The string inside the flag format should be at least 12 characters long and
   #    hard to guess.
   - AlphaCTF{MaC_eXF1LTR4tioN_tHrOUGh_4rP_P4Ck3Ts_ch4ll3Nge_4cc3pt3D}
-
 # Settings used for Dockerfile deployment
 # If not used, remove or set to null
 # image: image_name
@@ -55,15 +59,15 @@ flags:
 # Can be removed if unused
 # Accepts strings
 # tags:
-#   - 
+#   -
 #   - sandbox
 #   - js
 
 # Files to be uploaded alongside the challenge in CTFd
 # These paths are relative to the same directory where the challenge.yml file is.
-files:
-  - chall.pcapng
 
 # Notes are used to clarify something in the challenge for participants
-# Notes: 
+# Notes:
 #   - no need to bruteforce (for example)
+state: hidden
+version: "0.1"

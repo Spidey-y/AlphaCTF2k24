@@ -13,6 +13,6 @@ WORKDIR /home/ctfer
 COPY ./chall .
 
 RUN chown -R ctfer:ctfer /home/ctfer && \
-    chmod +x ./script.sh ./entrypoint.sh && \
+    chmod +x ./script.sh ./entrypoint.sh 
 
 ENTRYPOINT ["./entrypoint.sh"]

@@ -1,18 +1,20 @@
-version: '3'
+version: '2'
 
 services:
   web:
     build: .
     image: "proxy"
     ports:
-      - 5000:5000
-    restart: always
+      - 1104:5000
+
     depends_on:
       - nginx
+
 
   nginx:
     image: nginx:alpine
     volumes:
       - ./challenge/nginx.conf:/etc/nginx/nginx.conf:ro
     restart: always
+
 
