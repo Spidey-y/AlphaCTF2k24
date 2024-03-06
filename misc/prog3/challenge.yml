@@ -1,0 +1,20 @@
+name: "Programming 3"
+author: Adel
+category: misc
+difficulty: easy
+description: |
+  > Your third programming challenge! [chall](https://drive.google.com/file/d/1z2Xe2aFwu_LTBBfIvz2XxZTzlbF54Hm7/view?usp=sharing)
+
+  **Author** : Adel
+files:
+  - "chall.zip"
+flags:
+  - AlphaCTF{PIzz4_Fu3L_0Pt1m1ZaT1oN_1337}
+connection_info: nc -v prog3.challenge.alphabit.club 1337
+state: hidden
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+version: "0.1"

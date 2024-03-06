@@ -1,0 +1,39 @@
+name: runsomewhere
+author: j3x
+author_link: https://github.com/amj3x
+
+category: reverse
+difficulty: medhard
+
+description: |
+  > I ran this binary somewhere that contains crucial files, and suddenly, all of them were encrypted. Could you help me recover them?   
+  > Important : Execute this binary only in a test directory with test files that you're okay with them getting encrypted. Otherwise, you'll need to solve the challenge before you'll be able to recover your files.  
+  > [chall.zip](https://drive.google.com/file/d/188PF6dnBV5eEN_ET7rezRKMrNH8A_Ytx/view?usp=sharing)
+  **Author** : j3x
+flags:
+  - AlphaCTF{y0u_h4ve_b34t3n_mY_b4By_rust0mwar3}
+
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
+
+# Accepts strings
+topics:
+  - encryptor
+  - rust
+
+# tags:
+#   - sandbox
+#   - js
+
+# Files to be uploaded alongside the challenge in CTFd
+# These paths are relative to the same directory where the challenge.yml file is.
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"

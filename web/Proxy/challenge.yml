@@ -1,0 +1,18 @@
+name: "Proxy"
+author: Adel
+category: web
+difficulty: easy
+description: |
+  > This proxy is a bit weird, it contains a lot of secrets, can you find the most important one? [chall.zip](https://drive.google.com/file/d/1xLvU5xe_TRBpegbHeueukHQzFSdYGtAP/view?usp=sharing)
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{wa7ChOu7_f0r_THE_55RF}
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+connection_info: https://proxy.challenge.alphabit.club
+state: hidden
+version: "0.1"

@@ -1,0 +1,19 @@
+name: "911"
+author: Adel
+category: web
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: easy
+description: |
+  > Welcome to everyone's favorite web challenge, with some a twist ofcrs, we will test your web knowledge, prove that you are a web hacker and get the flag. 
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{1M_rE4Dy_t0_b3_4_WEB_HacKEr_yay}
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+connection_info: https://911.challenge.alphabit.club
+state: hidden
+version: "0.1"

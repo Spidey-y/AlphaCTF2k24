@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  server:
+    build: .
+    ports:
+      - "1301:1337"
+    environment:
+      - FLAG="AlphaCTF{1_h0p3_u_u5ed_numPy_1nSTEAd_0F_manUalLY_MAk1Ng_L157s}"
+

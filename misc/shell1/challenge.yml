@@ -1,0 +1,40 @@
+name: shell1
+author: j3x
+# Author website or Github link
+author_link: https://github.com
+
+category: misc
+difficulty: easy
+
+description: |
+  > Just started learning bash scripting, it's so easy and secure. I bet no one can read the FLAG.  
+
+  **Author** : j3x
+flags:
+  - AlphaCTF{that_was_ez_ghir_azha_brk}
+
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
+
+# Optional settings
+
+connection_info: nc -v shell1.challenge.alphabit.club 1337
+
+topics:
+  - bash
+
+tags:
+  - warmup
+
+files:
+  - chall/script.sh
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"

@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  server:
+    build: .
+    environment:
+      - TOKEN=MTIxMTk3NDkwMzI4MTIyMTY0Mw.Go4V80.lT3wPe_MH7Vk2FTydKjnT5aATJyWsvEmSFlsOk
+      - GIFT="MTIxMzU4MzgxMTE4NzgzNDk3MA.GarEwu.iUGt_9acezO0JSejmIO5iIvcqPj_vuh2rtqMyg"
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 0.5

@@ -1,0 +1,18 @@
+name: "Programming 1"
+author: Adel
+category: misc
+difficulty: easy
+description: |
+  > who doesn't like some programming challenges? [chall](https://drive.google.com/file/d/1xvdF1G7ilCGMbLQO8tCH9bFExlZiPi-b/view?usp=sharing)
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{1_h0p3_u_u5ed_numPy_1nSTEAd_0F_manUalLY_MAk1Ng_L157s}
+connection_info: nc -v prog1.challenge.alphabit.club 1337
+state: hidden
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+version: "0.1"

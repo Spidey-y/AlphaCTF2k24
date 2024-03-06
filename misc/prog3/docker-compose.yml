@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+  server:
+    build: .
+    ports:
+      - "1303:1337"
+    environment:
+      - FLAG="AlphaCTF{PIzz4_Fu3L_0Pt1m1ZaT1oN_1337}"

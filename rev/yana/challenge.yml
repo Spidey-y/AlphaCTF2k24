@@ -1,0 +1,28 @@
+name: yana
+author: yalatr3ch3
+author_link: https://github.com/Yassine-Latreche
+category: reverse
+difficulty: medium
+description: |
+  > Yana - yet another notes app. 
+
+  > Here is yet another notes app for you. Have fun!
+  > Attachment : [build-1709472076187.apk](https://drive.google.com/file/d/19NVNRXF_CiKItGudLsWQV--j-hcSqm7x/view?usp=sharing)
+
+  **Author** : yalatr3ch3
+flags:
+  - AlphaCTF{y0U_317H3r_pR07ECt_yOuR_r0UT35_0r_SecuR3_YOUR_f1R3b4sE_db}
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+topics:
+  - Rev
+tags:
+  - Android
+
+# DO NOT CHANGE
+state: hidden
+version: "0.1"

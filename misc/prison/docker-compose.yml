@@ -1,16 +1,12 @@
-version: '3.8'
+version: '2'
 
 services:
   server:
     build: .
     ports:
-      - 1114:1114
-    deploy:
-      replicas: 1
-      resources:
-        limits:
-          cpus: '0.50'
-          memory: 50M
-        reservations:
-          cpus: '0.25'
-          memory: 20M
+      - 1300:1114
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 0.5
+

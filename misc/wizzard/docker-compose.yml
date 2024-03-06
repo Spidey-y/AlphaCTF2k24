@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  server:
+    build: .
+    ports:
+      - "1307:1337"
+    image: wizzard
+    environment:
+      - FLAG=AlphaCTF{a_wizzARd_KN0wS_H1s_Bi7W1s3_0Per4tiONs}

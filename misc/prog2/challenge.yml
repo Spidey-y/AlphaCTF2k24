@@ -1,0 +1,18 @@
+name: "Programming 2"
+author: Adel
+category: misc
+difficulty: easy
+description: |
+  > Your second programming challenge! [chall](https://drive.google.com/file/d/1pCgesqq3mK238PHXwE94JewfNSxyqq5a/view?usp=sharing)
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{A_s7ar_paTHfiND1ng_m4s73r}
+connection_info: nc -v prog2.challenge.alphabit.club 1337
+state: hidden
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+version: "0.1"

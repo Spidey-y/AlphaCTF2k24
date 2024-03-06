@@ -1,0 +1,38 @@
+name: shell3
+author: j3x
+author_link: https://github.com/amj3x
+
+category: misc
+difficulty: medhard
+
+description: |
+  > No bro, there is no way you can get me this time. I've locked down my code with the secure practices you shared last time, implementing it everywhere I could. Also, I've used four different methods for regex matching to flex my skills. I'm officially a bash master now!
+
+  **Author** : j3x
+flags:
+  - AlphaCTF{basssshhhhh_1s_craAaAaAazyYyYyyYyyyy}
+
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
+
+connection_info: nc -v shell3.challenge.alphabit.club 1337
+
+topics:
+  - bash
+
+# tags:
+#  - sandbox
+#  - js
+
+files:
+  - chall/script.sh
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"

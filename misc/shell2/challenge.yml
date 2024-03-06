@@ -1,0 +1,43 @@
+name: shell2
+author: j3x
+author_link: https://github.com/amj3x
+
+category: misc
+difficulty: medium
+
+description: |
+  > Nevermind, I admit that was a noob mistake. I've learned from it and levelled up. Check this out, I've crafted an ultra-secure login mechanism in bash. I dare anyone to try and bypass it! 
+
+  **Author** : j3x
+flags:
+  - AlphaCTF{N3v3r_f0rget_t0_qu0t3_ur_v4r1abl35}
+
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
+
+connection_info: nc -v shell2.challenge.alphabit.club 1337
+
+topics:
+  - bash
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+# tags:
+#   - sandbox
+#   - js
+
+# Files to be uploaded alongside the challenge in CTFd
+# These paths are relative to the same directory where the challenge.yml file is.
+files:
+  - chall/script.sh
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"

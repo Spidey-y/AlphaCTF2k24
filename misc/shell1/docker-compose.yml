@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  server:
+    build: .
+    ports:
+      - 1304:1337
+
+
+

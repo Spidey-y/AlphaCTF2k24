@@ -1,0 +1,23 @@
+name: "Paths"
+author: Adel
+category: web
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: easy
+description: |
+  > In the coding symphony, let judgments cease,
+  > PHP, a melody that brings code to ease.
+  > Amidst the languages, a unique gem,
+  > PHP is not the problem; let's cherish them.
+  > In diverse syntax, our digital dream.
+  > [chall.zip](https://drive.google.com/file/d/1COSVh2nJySeVG626gg2cdzcZi8xrrVnN/view?usp=sharing)
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{3VEn_NG1nx_H4VE_LfI_BU7_PHP_5tilL_5H17}
+type: dynamic
+initial: 500
+decay: 35
+minimum: 50
+connection_info: https://paths.challenge.alphabit.club
+state: hidden
+version: "0.1"
