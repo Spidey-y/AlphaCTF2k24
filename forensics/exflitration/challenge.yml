@@ -69,3 +69,5 @@ flags:
 # Notes are used to clarify something in the challenge for participants
 # Notes:
 #   - no need to bruteforce (for example)
+state: hidden
+version: "0.1"
