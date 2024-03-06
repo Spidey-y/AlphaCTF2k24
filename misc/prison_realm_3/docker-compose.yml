@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  prison_realm_3:
+    build: .
+    image: prison_realm_3
+    container_name: prison_realm_3_chall
+    ports:
+      - 12345:1337
+    hostname: kingdom
+    cap_add:
+        - SYS_ADMIN
+    read_only: true
+    volumes:
+        - prison_realm_3_volume:/.scripts
+    networks:
+        - prison_realm_3_network
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M
+
+volumes:
+  prison_realm_3_volume:
+    name: prison_realm_3_volume
+    driver: local
+
+networks:
+  prison_realm_3_network:
+    name: prison_realm_3_network
+    driver: bridge
