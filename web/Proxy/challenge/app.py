@@ -13,7 +13,7 @@ blacklist = ["127.0.0.1",
 def api():
     url_to_fetch = request.args.get('url')
     if not url_to_fetch:
-        return "No url provided\nsee /help"
+        return "No url provided\nsee"
     if not re.match(re.compile(r'^(https?):\/\/(?:(?:\d{1,3}\.){3}\d{1,3})(?::\d{1,5})?(?:/?|[/?]\S+)$',
                                re.IGNORECASE), url_to_fetch):
         return "Boom Bam Bop Badabop boomp"
