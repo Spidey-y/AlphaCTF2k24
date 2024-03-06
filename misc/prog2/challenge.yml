@@ -8,7 +8,7 @@ description: |
   **Author** : Adel
 flags:
   - AlphaCTF{A_s7ar_paTHfiND1ng_m4s73r}
-connection_info: nc -v prog2.challenge.alphabit.club 1337
+connection_info: nc -v 35.228.220.66 1302
 state: hidden
 type: dynamic
 extra:

@@ -8,7 +8,7 @@ description: |
   **Author** : Adel
 flags:
   - AlphaCTF{a_wizzARd_KN0wS_H1s_Bi7W1s3_0Per4tiONs}
-connection_info: nc -v wizzard.challenge.alphabit.club 1337
+connection_info: nc -v 35.228.220.66 1307
 type: dynamic
 extra:
   initial: 500
