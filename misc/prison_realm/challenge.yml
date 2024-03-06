@@ -9,7 +9,7 @@ difficulty: easy
 description: |
   > Find a way out.
 
-  **Connect With** : nc
+  **Connect With** : nc -v 35.228.220.66 1309
 
   **Author** : SlyPex
 
