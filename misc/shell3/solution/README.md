@@ -1,3 +1,3 @@
-```^[_]+$(grep -o 'AlphaCTF[^}]*}' /proc/self/environ)```
+```^[_]+$(grep -oa 'AlphaCTF[^}]*}' /proc/self/en?iron)```
 
 Detailed solution will be added soon
