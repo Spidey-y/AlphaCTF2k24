@@ -1,0 +1,23 @@
+name: ez_aes
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: crypto
+difficulty: easy
+
+description: |
+  > whats aes ??
+  >
+  > [chall.py](https://drive.google.com/drive/folders/1yhGZJA3wWAJEueB4pAkt_X5LhsucX5Pl)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{d0_p30pl3_st1ll_us3_AES_in_ECB_m0d3}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+connection_info: connection_info
