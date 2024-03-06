@@ -1,15 +1,17 @@
-version: '3'
+version: '3.8'
 
 services:
   server:
     build: .
     ports:
-      - 1337:1337
+      - 1306:1337
     deploy:
+      restart_policy:
+        condition: on-failure
       replicas: 1
       resources:
         limits:
-          cpus: '0.50'
+          cpus: '0.5'
           memory: 50M
         reservations:
           cpus: '0.25'

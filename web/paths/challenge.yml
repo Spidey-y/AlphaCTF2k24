@@ -16,8 +16,8 @@ flags:
   - AlphaCTF{3VEn_NG1nx_H4VE_LfI_BU7_PHP_5tilL_5H17}
 type: dynamic
 initial: 500
-decay: 30
+decay: 35
 minimum: 50
-connection_info: https://challenges.isictf.live:1400
+connection_info: https://paths.challenge.alphabit.club
 state: hidden
 version: "0.1"

@@ -15,9 +15,9 @@ flags:
 type: dynamic
 value: 500
 extra:
-    initial: 500
-    decay: 25
-    minimum: 50
+  initial: 500
+  decay: 35
+  minimum: 50
 topics:
   - Rev
 tags:

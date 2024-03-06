@@ -10,7 +10,7 @@ files:
   - "chall.zip"
 flags:
   - AlphaCTF{PIzz4_Fu3L_0Pt1m1ZaT1oN_1337}
-connection_info: nc -v challenges.isictf.live 1102
+connection_info: nc -v prog3.challenge.alphabit.club 1337
 state: hidden
 type: dynamic
 extra:

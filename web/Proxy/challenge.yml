@@ -10,8 +10,8 @@ flags:
   - AlphaCTF{wa7ChOu7_f0r_THE_55RF}
 type: dynamic
 initial: 500
-decay: 30
+decay: 35
 minimum: 50
-connection_info: https://challenges.isictf.live:1400
+connection_info: https://proxy.challenge.alphabit.club
 state: hidden
 version: "0.1"

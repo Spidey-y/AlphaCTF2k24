@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   nginx:
@@ -6,8 +6,18 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8080:80
-    restart: always
+      - 1103:80
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M
     depends_on:
       - php-fpm
     links:
@@ -18,8 +28,18 @@ services:
     
   php-fpm:
     image: php:8-fpm
-    restart: always
     expose:
       - 9000
     volumes:
       - ./challenge/:/var/www/html/
+    deploy:
+      restart_policy:
+        condition: on-failure
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M

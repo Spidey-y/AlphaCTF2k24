@@ -16,8 +16,8 @@ flags:
 type: dynamic
 value: 500
 extra:
-    initial: 500
-    decay: ${DECAY} # leave it like this
-    minimum: 50
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
 
-connection_info: connection_info
+connection_info: nc -v enigma.challenge.alphabit.club 1337

@@ -12,7 +12,7 @@ flags:
   - AlphaCTF{maximilien_dubois_germany_saarbrucken_saarland_01_04_1998}
 type: dynamic
 initial: 500
-decay: 30
+decay: 35
 minimum: 50
 state: hidden
 version: "0.1"
