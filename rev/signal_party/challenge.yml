@@ -20,6 +20,7 @@ tags:
   - Reverse
   - Easy
 
+type: dynamic
 value: 500
 extra:
   initial: 500

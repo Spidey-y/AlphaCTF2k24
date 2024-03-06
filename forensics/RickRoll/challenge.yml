@@ -30,6 +30,7 @@ flags:
   # 2. The string inside the flag format should be at least 12 characters long and
   #    hard to guess.
   - AlphaCTF{th1$_I$_ApnG_did_y0u_KNOW_iT_I$_l1K3_G1f}
+type: dynamic
 value: 500
 extra:
   initial: 500

@@ -40,4 +40,6 @@ pwn/ret2nowhere = pwn/ret2nowhere
 pwn/chunks = pwn/chunks
 pwn/return = pwn/return
 pwn/address = pwn/address
+misc/C Code = misc/C Code
+misc/prison_realm/ = misc/prison_realm/
 

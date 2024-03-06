@@ -13,4 +13,4 @@ services:
     restart: always
     mem_limit: 256M
     mem_reservation: 128M
-    cpus: 0.5
+    cpus: 1
