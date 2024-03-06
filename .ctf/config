@@ -1,6 +1,7 @@
 [config]
 url = https://ctf.alphabit.club/
-access_token = 8e8f481ed3bb7650b6170e9fbebbf10028cebd07941eb935e37d8881bbe249a2
+access_token = 99bc9a53bed0ff1701c3e80e020b5bd8fa40e8be3ea2b11f836968a21738082b
 
 [challenges]
+web/911 = web/911
 

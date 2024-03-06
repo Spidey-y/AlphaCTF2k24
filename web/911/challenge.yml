@@ -10,9 +10,10 @@ description: |
 flags:
   - AlphaCTF{1M_rE4Dy_t0_b3_4_WEB_HacKEr_yay}
 type: dynamic
-initial: 500
-decay: 35
-minimum: 50
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
 connection_info: https://911.challenge.alphabit.club
 state: hidden
 version: "0.1"

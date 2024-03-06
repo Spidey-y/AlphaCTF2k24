@@ -10,8 +10,9 @@ flags:
   - AlphaCTF{a_wizzARd_KN0wS_H1s_Bi7W1s3_0Per4tiONs}
 connection_info: nc -v wizzard.challenge.alphabit.club 1337
 type: dynamic
-initial: 500
-decay: 35
-minimum: 50
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
 state: hidden
 version: "0.1"
