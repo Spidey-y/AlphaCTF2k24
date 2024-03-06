@@ -1,0 +1,17 @@
+name: "Proxy"
+author: Adel
+category: web
+difficulty: easy
+description: |
+  > This proxy is a bit weird, it contains a lot of secrets, can you find the most important one? [chall.zip](https://drive.google.com/file/d/1IuoNFxMgVL_uh1MvEB21GmZ4cMgHLiVp/view?usp=sharing)
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{wa7ChOu7_f0r_THE_55RF}
+type: dynamic
+initial: 500
+decay: 30
+minimum: 50
+connection_info: https://challenges.isictf.live:1400
+state: hidden
+version: "0.1"
