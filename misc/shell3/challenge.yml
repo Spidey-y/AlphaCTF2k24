@@ -19,7 +19,7 @@ extra:
   decay: 35 # leave it like this
   minimum: 50
 
-connection_info: nc -v 35.228.220.66 1303
+connection_info: nc -v 35.228.220.66 1306
 
 topics:
   - bash
