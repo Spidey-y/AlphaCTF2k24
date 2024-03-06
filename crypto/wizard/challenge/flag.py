@@ -1,0 +1,1 @@
+FLAG='here is your flag go submit it : AlphaCTF{m4g1c_w1th_qu4dr4t1c_res1due} GG you know how quadratic residue works, sometimes i fear what math can do, it looks like magic !!!!!!$$$$$$'

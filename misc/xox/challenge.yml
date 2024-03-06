@@ -1,0 +1,27 @@
+name: XOX
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: misc
+difficulty: easy
+
+description: |
+  > do you know how to play xo ??
+  
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{GG_y0u_knOw_hOw_t0_wr1t3_$cr1p7s}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"
+
+connection_info: connection_info 

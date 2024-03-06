@@ -1,0 +1,73 @@
+name: shell3
+author: j3x
+author_link: https://github.com/amj3x
+
+category: misc
+difficulty: medhard
+
+description: |
+  > No bro, there is no way you can get me this time. I've locked down my code with the secure practices you shared last time, implementing it everywhere I could. Also, I've used four different methods for regex matching to flex my skills. I'm officially a bash master now!
+
+  **Author** : j3x
+flags:
+  - AlphaCTF{basssshhhhh_1s_craAaAaAazyYyYyyYyyyy}
+
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+image: gcr.io/gdg-ctf-2022/{challenge_name}
+
+
+connection_info: nc
+
+topics:
+  - bash
+
+# tags:
+#  - sandbox
+#  - js
+
+files:
+  - chall/script.sh
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"
+
+deployment:
+  # Temporary auto IP ban when detecting abuse
+  autoban: false
+  # Allow/Deny egress (outcoming) traffic from pod
+  # "allow" -> Allow outcoming traffic
+  # "deny" -> Deny outcoming traffic
+  egress: "allow"
+  # This stores the challenge name but in an acceptable format for deployment
+  # Regex for the name is [a-z0-9]+(-)*[a-z0-9]*
+  name: challenge-name
+  # The state of deployment of challenge (either false or true)
+  deployed: false
+  replicasNumber: 1
+  # Type of the challenge either tcp or http 
+  type: http 
+  dockerRepository: gcr.io/gdg-ctf-2022
+  dockerImage: shell3
+  # If the challenge don't expose any port then leave it empty
+  containerPort: 80
+  limits:
+    cpu: 200m
+    memory: 500Mi 
+  requests:
+    cpu: 100m
+    memory: 200Mi 
+  healthCheck:
+    initialDelaySeconds: 10
+    periodSeconds: 30
+  other: 
+    # parameters of pod annotations 
+    podAnnotations: {}
+

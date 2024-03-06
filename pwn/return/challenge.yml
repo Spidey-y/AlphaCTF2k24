@@ -1,0 +1,24 @@
+name: return
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: pwn
+difficulty: easy
+
+description: |
+  > a classic ret2win !
+  >
+  >[chall](https://drive.google.com/drive/folders/115-GIQhrNE8aWveH3MPn0T-eXCRN-OpW)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{17$_4LL_4B0U7_P01N73R$}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+connection_info: connection_info
+ 

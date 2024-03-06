@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: "911"
+    environment:
+      - FLAG="AlphaCTF{1M_rE4Dy_t0_b3_4_WEB_HacKEr_yay}"
+    ports:
+      - 1401:8000
+    restart: always

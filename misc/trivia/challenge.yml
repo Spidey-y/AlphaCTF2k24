@@ -1,0 +1,20 @@
+name: "Trivia"
+author: Adel
+category: programming
+difficulty: easy
+description: |
+  > Do you like trivia? if you do, i recommend you to try our trivia bot found in discord, have fun :)
+
+  **Author: Adel**
+flags:
+  - AlphaCTF{y0UR3_tHE_7riv14_m4s73r}
+
+state: hidden
+type: dynamic
+tags:
+  - discord
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+version: "0.1"
