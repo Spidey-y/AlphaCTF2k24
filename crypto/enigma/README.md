@@ -1,11 +1,10 @@
-# randomness
+# enigma
 
 **`Author:`** [F0DH1L](https://github.com/fodhil-ben)
 
 ## Description
 
-  > i wonder how this computers generate random numbers i made my own RNG
-  > i dit it in so many rounds so you cant get it easily
+  > can you solve the enigma
 
 - **Files** 
 - [chall.py](./challenge/chall.py) 

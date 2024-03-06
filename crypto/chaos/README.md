@@ -1,12 +1,13 @@
-# obscurity
+# chaos
 
 **`Author:`** [F0DH1L](https://github.com/fodhil-ben)
 
 ## Description
-  > i made my public key so large so that you can't factorise it
+
+  > welcome ladies and gentlemen today we gonna see how to make cryptography from chaos
 
 - **Files** 
-- [output.txt](./challenge/output.txt) 
+- [chall.py](./challenge/chall.py) 
 
 ## Solution
 

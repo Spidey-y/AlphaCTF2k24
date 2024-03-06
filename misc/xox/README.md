@@ -1,12 +1,14 @@
-# obscurity
+# prison
 
 **`Author:`** [F0DH1L](https://github.com/fodhil-ben)
 
 ## Description
-  > i made my public key so large so that you can't factorise it
+
+  > can you break from this prison
+  > flag in 'flag.txt'
 
 - **Files** 
-- [output.txt](./challenge/output.txt) 
+- [challenge.py](./challenge/challenge.py) 
 
 ## Solution
 

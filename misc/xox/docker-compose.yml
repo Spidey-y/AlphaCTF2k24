@@ -1,0 +1,8 @@
+version: "3.3"
+
+services:
+  server:
+    build:
+      context: .
+    ports:
+      - "2323:2323"

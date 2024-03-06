@@ -1,0 +1,29 @@
+name: prison
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: misc
+difficulty: medium
+
+description: |
+  > can you break from this prison
+  > flag in 'flag.txt'
+  >
+  
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{C0NGR47$_Y0U_3$C4P3D_7H3_PR1$0N}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"
+
+connection_info: connection_info 

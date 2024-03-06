@@ -1,12 +1,13 @@
-# obscurity
+# wizard
 
 **`Author:`** [F0DH1L](https://github.com/fodhil-ben)
 
 ## Description
-  > i made my public key so large so that you can't factorise it
+  > sometimes i fear what math can do.
 
 - **Files** 
-- [output.txt](./challenge/output.txt) 
+- [out.py](./solution/out.py)
+- [chall.py](./challenge/chall.py) 
 
 ## Solution
 

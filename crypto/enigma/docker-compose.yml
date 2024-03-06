@@ -4,7 +4,7 @@ services:
   server:
     build: .
     ports:
-      - 1234:1234
+      - 1337:1337
     deploy:
       replicas: 1
       resources:
