@@ -1,0 +1,1 @@
+AlphaCTF{LFI_X_sSrF_1s_4_m0nst3R}

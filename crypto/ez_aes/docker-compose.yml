@@ -1,5 +1,6 @@
 version: '2'
 
+
 services:
   server:
     build: .
@@ -9,3 +10,4 @@ services:
     mem_limit: 256M
     mem_reservation: 128M
     cpus: 1
+

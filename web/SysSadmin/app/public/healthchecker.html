@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Checker</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #00ff00;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      font-size: 1.2em;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      margin: 10px;
+      border: 2px solid #00ff00;
+      border-radius: 25px;
+      font-size: 1em;
+      background-color: #000;
+      color: #00ff00;
+    }
+    input[type="text"]::placeholder {
+      color: #777;
+    }
+    button[type="submit"] {
+      padding: 15px 30px;
+      border: 2px solid #00ff00;
+      border-radius: 25px;
+      color: #00ff00;
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    button[type="submit"]:hover {
+      background-color: #00ff00;
+      color: #121212;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Health Checker</h1>
+  <form id="healthCheckForm">
+    <label for="urlInput">Enter URL:</label><br>
+    <input type="text" id="urlInput" name="url" placeholder="https://example.com"><br><br>
+    <label for="apiKeyInput">Enter API Key:</label><br>
+    <input type="text" id="apiKeyInput" name="apiKey"><br><br>
+    <button type="submit">Check Health</button>
+  </form>
+  <div id="result"></div>
+
+  <script>
+    document.getElementById('healthCheckForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const url = document.getElementById('urlInput').value;
+      const apiKey = document.getElementById('apiKeyInput').value;
+      try {
+        const response = await fetch('/api/healthchecker', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+          },
+          body: JSON.stringify({ url })
+        });
+        const data = await response.text();
+        document.getElementById('result').innerText = data;
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    });
+  </script>
+</body>
+</html>

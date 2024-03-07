@@ -21,3 +21,4 @@ extra:
     minimum: 50
 
 connection_info: nc -v 35.228.220.66 1203
+

@@ -1,0 +1,12 @@
+{
+  "name": "mon-cereale",
+  "version": "1.0.0",
+  "description": "Mon Céréale",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.4.5",
+    "jsonwebtoken": "^8.5.1",
+    "node-serialize": "^0.0.4"
+  }
+}

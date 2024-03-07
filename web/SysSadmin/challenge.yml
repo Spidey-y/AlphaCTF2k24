@@ -1,0 +1,75 @@
+name: Sys Sadmin
+author: j3x
+author_link: https://github.com/amj3x
+
+category: web
+difficulty: medhard
+
+description: |
+  > Our SysAdmin thought making a web app to handle his tasks remotely is a good idea, and now, he's SysSadmin.  
+
+  **Author** : j3x
+flags:
+  - AlphaCTF{LFI_X_sSrF_1s_4_m0nst3R}
+
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+image: gcr.io/gdg-ctf-2022/{challenge_name}
+
+connection_info: http
+
+topics:
+  - cookiemonster
+  - lfi
+  - ssrf
+  - rce
+
+# tags:
+#   - sandbox
+#   - js
+
+# files:
+#   - dist/source.py
+
+# DO NOT CHANGE
+
+state: hidden
+
+version: "0.1"
+
+deployment:
+  # Temporary auto IP ban when detecting abuse
+  autoban: false
+  # Allow/Deny egress (outcoming) traffic from pod
+  # "allow" -> Allow outcoming traffic
+  # "deny" -> Deny outcoming traffic
+  egress: "allow"
+  # This stores the challenge name but in an acceptable format for deployment
+  # Regex for the name is [a-z0-9]+(-)*[a-z0-9]*
+  name: challenge-name
+  # The state of deployment of challenge (either false or true)
+  deployed: false
+  replicasNumber: 1
+  # Type of the challenge either tcp or http 
+  type: http 
+  dockerRepository: gcr.io/gdg-ctf-2022
+  dockerImage: challenge-name
+  # If the challenge don't expose any port then leave it empty
+  containerPort: 80
+  limits:
+    cpu: 200m
+    memory: 500Mi 
+  requests:
+    cpu: 100m
+    memory: 200Mi 
+  healthCheck:
+    initialDelaySeconds: 10
+    periodSeconds: 30
+  other: 
+    # parameters of pod annotations 
+    podAnnotations: {}
+
