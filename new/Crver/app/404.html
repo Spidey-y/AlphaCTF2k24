@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: initial;
+            background-color: #1a1a1a; /* Dark black */
+            color: #00ff00; /* Green */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em; /* Larger font size */
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-in-out;
+            text-shadow: 2px 2px 4px green; /* Adjust the shadow values as needed */
+        }
+
+        header h1 .highlight {
+            color: white; /* Red */
+        }
+
+        section p {
+            font-size: 20px; /* Slightly larger font size */
+            line-height: 1.8; /* Increased line height */
+            color: #bdc3c7;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>404 - Page Not Found</h1>
+        </header>
+        <section>
+            <p>Oops! We couldn't find the page you were looking for.</p>
+        </section>
+    </div>
+</body>
+
+</html>
