@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 
-const uri = 'mongodb://mongo:27017/mon-cereale-database';
+const uri = 'mongodb://mongo:27019/mon-cereale-database';
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function connectDB() {

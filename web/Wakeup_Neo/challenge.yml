@@ -15,17 +15,12 @@ type: dynamic
 value: 500
 extra:
     initial: 500
-    decay: ${DECAY} # leave it like this
+    decay: 35 # leave it like this
     minimum: 50
 # For per team docker challenges
 # type: docker
 # value: 500
 
-# Settings used for Dockerfile deployment
-# If not used, remove or set to null
-image: gcr.io/gdg-ctf-2022/{challenge_name}
-
-# Optional settings
 
 # connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
 # 1. For http challenges: http://{challenge_name}.chal.ctf.gdgalgiers.com
@@ -56,36 +51,4 @@ tags:
 state: hidden
 
 version: "0.1"
-
-deployment:
-  # Temporary auto IP ban when detecting abuse
-  autoban: false
-  # Allow/Deny egress (outcoming) traffic from pod
-  # "allow" -> Allow outcoming traffic
-  # "deny" -> Deny outcoming traffic
-  egress: "allow"
-  # This stores the challenge name but in an acceptable format for deployment
-  # Regex for the name is [a-z0-9]+(-)*[a-z0-9]*
-  name: challenge-name
-  # The state of deployment of challenge (either false or true)
-  deployed: false
-  replicasNumber: 1
-  # Type of the challenge either tcp or http 
-  type: http 
-  dockerRepository: gcr.io/gdg-ctf-2022
-  dockerImage: challenge-name
-  # If the challenge don't expose any port then leave it empty
-  containerPort: 80
-  limits:
-    cpu: 200m
-    memory: 500Mi 
-  requests:
-    cpu: 100m
-    memory: 200Mi 
-  healthCheck:
-    initialDelaySeconds: 10
-    periodSeconds: 30
-  other: 
-    # parameters of pod annotations 
-    podAnnotations: {}
 

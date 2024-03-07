@@ -19,7 +19,7 @@ def check_winner(board):
     return 'D'
 
 print('here is the result of 1000 person playing X O you must return a string of containing the right sequence to get the flag if x win return x , if o return o else return d : ')
-for i in range(1000):
+for i in range(100):
     a = list('XXXXOOOO')
     a.append(random.choice(['X', 'O']))
     random.shuffle(a) 
