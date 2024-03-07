@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 
 services:
   neo-db:
@@ -13,17 +13,25 @@ services:
     volumes:
       - data:/data
       - logs:/logs
+    restart: always
+    mem_limit: 1024M
+    mem_reservation: 128M
+    cpus: 1
 
   python-app:
     build: .
     ports:
-      - "8000:8000"
+      - "1109:8000"
     environment:
       - NEO4J_URI=neo4j://neo-db:7687
       - USER_NAME=neo4j
       - PASSWORD=super_secret_you_cant_gusss_it
     depends_on:
       - neo-db
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 1
 
 volumes:
   data:

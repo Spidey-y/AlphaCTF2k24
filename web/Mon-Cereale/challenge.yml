@@ -1,4 +1,4 @@
-name: Mon Céréale
+name: Mon Cereale
 author: j3x
 # Author website or Github link
 author_link: https://github.com/amj3x
@@ -16,9 +16,9 @@ type: dynamic
 value: 500
 extra:
     initial: 500
-    decay: ${DECAY} # leave it like this
+    decay: 35 # leave it like this
     minimum: 50
-image: gcr.io/gdg-ctf-2022/{challenge_name}
+
 
 # Optional settings
 
@@ -31,7 +31,7 @@ image: gcr.io/gdg-ctf-2022/{challenge_name}
 #    4.2 nc: nc -v inst.ctf.gdgalgiers.com ${INSTANCE_PORT}
 #    4.3 ssh: ssh -p ${INSTANCE_PORT} {user}@inst.ctf.gdgalgiers.com
 # 5. For offline challenges: remove connection_info
-connection_info: http
+connection_info: https://moncereal.challenge.alphabit.club
 
 topics:
   - nosqli
@@ -50,36 +50,4 @@ files:
 state: hidden
 
 version: "0.1"
-
-deployment:
-  # Temporary auto IP ban when detecting abuse
-  autoban: false
-  # Allow/Deny egress (outcoming) traffic from pod
-  # "allow" -> Allow outcoming traffic
-  # "deny" -> Deny outcoming traffic
-  egress: "allow"
-  # This stores the challenge name but in an acceptable format for deployment
-  # Regex for the name is [a-z0-9]+(-)*[a-z0-9]*
-  name: challenge-name
-  # The state of deployment of challenge (either false or true)
-  deployed: false
-  replicasNumber: 1
-  # Type of the challenge either tcp or http 
-  type: http 
-  dockerRepository: gcr.io/gdg-ctf-2022
-  dockerImage: challenge-name
-  # If the challenge don't expose any port then leave it empty
-  containerPort: 80
-  limits:
-    cpu: 200m
-    memory: 500Mi 
-  requests:
-    cpu: 100m
-    memory: 200Mi 
-  healthCheck:
-    initialDelaySeconds: 10
-    periodSeconds: 30
-  other: 
-    # parameters of pod annotations 
-    podAnnotations: {}
 
