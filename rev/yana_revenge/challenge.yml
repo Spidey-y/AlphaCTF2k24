@@ -1,0 +1,28 @@
+name: yana_revenge
+author: yalatr3ch3
+author_link: https://github.com/Yassine-Latreche
+category: reverse
+difficulty: medhard
+description: |
+  > Yana_revenge - yet another notes app. 
+
+  > You did well in the first challege, here is the second one. Have fun!
+  > Attachment : [app-release.apk](https://drive.google.com/file/d/12VsDZPAJdFTBpGAkJ_MWUR2Qp2fm1Iqr/view?usp=sharing)
+
+  **Author** : yalatr3ch3
+flags:
+  - AlphaCTF{welL_dONE_H4cK3R!!}
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+topics:
+  - Rev
+tags:
+  - Android
+
+# DO NOT CHANGE
+state: hidden
+version: "0.1"
