@@ -20,4 +20,4 @@ extra:
   decay: 35 # leave it like this
   minimum: 50
 
-connection_info: nc -v chaos.challenge.alphabit.club 1337
+connection_info: nc -v 35.228.220.66 1200

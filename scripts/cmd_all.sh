@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ALL_CHALLS_SCRIPT="./all-challs.sh"
+ALL_CHALLS_SCRIPT="./all_challs.sh"
 DIRNAME="$(
     cd -- "$(dirname "$0")" >/dev/null 2>&1
     pwd -P

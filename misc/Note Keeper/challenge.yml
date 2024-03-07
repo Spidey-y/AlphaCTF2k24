@@ -1,0 +1,18 @@
+name: "Notes"
+author: Adel
+category: osint
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: easy
+description: |
+  > In a town where he's known for forgetting things, Adel the lazy app developer opts for shortcuts, stealing someone else's stuff instead of creating his own solutions, untill one day when he found the jackpot, can you find it aswell?.  
+
+  **Author** : Adel (Spidey-y)
+flags:
+  - AlphaCTF{2024_aND_y37_ppL_dont_S3CURe_tH31r_Fir3Ba5E}
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+state: hidden
+version: "0.1"

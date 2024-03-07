@@ -1,16 +1,12 @@
-version: '2'
+version: '3'
 services:
   server:
     build: .
     ports:
-      - 1403:1337
+      - 1337:1337
     restart: always
     healthcheck:
       test: socat - TCP4:localhost:1337 || exit 1
       interval: 60s
       timeout: 2s
       retries: 5
-    restart: always
-    mem_limit: 256M
-    mem_reservation: 128M
-    cpus: 0.5

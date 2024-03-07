@@ -1,0 +1,20 @@
+name: "Its me Mario"
+author: Adel
+category: web
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: hard
+description: |
+  > Its him, Mario, get to lvl 10000 and get the flag. [mario.zip](https://drive.google.com/file/d/1eM49E61xzrHwEkDKsto-mV9kg8mCCmf0/view?usp=sharing)
+
+  **Author** : [phues](https://github.com/Phues), Adel
+flags:
+  - AlphaCTF{Un1ty_T00_345y_for_mE}
+
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+connection_info: https://mario.challenge.alphabit.club
+state: hidden
+version: "0.1"

@@ -1,0 +1,15 @@
+{
+  "name": "sysadmin",
+  "version": "1.0.0",
+  "description": "Sysadmin App",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

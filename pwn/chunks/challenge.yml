@@ -18,7 +18,7 @@ type: dynamic
 value: 500
 extra:
   initial: 500
-  decay: 35# leave it like this
+  decay: 35
   minimum: 50
 
-connection_info: nc -v chunks.challenge.alphabit.club 1337
+connection_info: nc -v 35.228.220.66 1401

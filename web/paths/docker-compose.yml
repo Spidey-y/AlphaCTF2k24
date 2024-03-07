@@ -6,20 +6,23 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 1103:80
-
+      - "1103:80"
     depends_on:
-      - php-fpm
-    links:
       - php-fpm
     volumes:
       - ./challenge/:/var/www/html/
-
+    restart: always
+    mem_limit: 512M
+    mem_reservation: 128M
+    cpus: 1
     
   php-fpm:
     image: php:8-fpm
     expose:
-      - 9000
+      - "9000"
     volumes:
       - ./challenge/:/var/www/html/
-
+    restart: always
+    mem_limit: 512M
+    mem_reservation: 128M
+    cpus: 1

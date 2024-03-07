@@ -24,4 +24,4 @@ state: hidden
 
 version: "0.1"
 
-connection_info: nc -v xox.challenge.alphabit.club 1337
+connection_info: nc -v 35.228.220.66 1308

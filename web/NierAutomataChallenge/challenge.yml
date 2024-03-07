@@ -1,0 +1,21 @@
+name: "Unity"
+author: Adel
+category: web
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: medium
+description: |
+  > Do you like games? do you find most of them boring? well, this is not the case with this one. 
+  > PS: it's not lagging, it's just a feature :). 
+
+  **Author** : [phues](https://github.com/Phues), Adel
+flags:
+  - AlphaCTF{y4Y_MY_f1Rs7_UNI7y_ch4ll}
+
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+connection_info: https://unity.challenge.alphabit.club
+state: hidden
+version: "0.1"

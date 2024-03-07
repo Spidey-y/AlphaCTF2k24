@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SysAdmin</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #00ff00;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 4em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+    a {
+      text-decoration: none;
+      padding: 15px 30px;
+      border: 2px solid #00ff00;
+      border-radius: 25px;
+      color: #00ff00;
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      background-color: transparent;
+    }
+    a:hover {
+      background-color: #00ff00;
+      color: #121212;
+    }
+    .small-btn {
+      padding: 10px 20px; /* Adjusted padding */
+      border-radius: 15px; /* Adjusted border radius */
+      font-size: 1em; /* Adjusted font size */
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome SysAdmin!</h1>
+  <h2>Perform a health check on our servers here:</h2>
+  <a href="/healthchecker">Health Checker</a>
+  <h2>View all user reports here:</h2>
+  <a href="/reports" class="small-btn">View Reports</a> <!-- Added class for smaller button -->
+</body>
+</html>

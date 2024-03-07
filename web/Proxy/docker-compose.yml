@@ -9,6 +9,10 @@ services:
 
     depends_on:
       - nginx
+    restart: always
+    mem_limit: 512M
+    mem_reservation: 128M
+    cpus: 1
 
 
   nginx:
@@ -16,5 +20,7 @@ services:
     volumes:
       - ./challenge/nginx.conf:/etc/nginx/nginx.conf:ro
     restart: always
-
+    mem_limit: 512M
+    mem_reservation: 128M
+    cpus: 1
 
