@@ -1,8 +1,11 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install -y socat
 
 RUN addgroup ctf && adduser --ingroup ctf ctf
+
+
+WORKDIR /home/ctf
 
 COPY ./challenge .
 

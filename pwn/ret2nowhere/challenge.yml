@@ -1,0 +1,23 @@
+name: ret2nowhere
+author: 0xhunter213
+author_link: https://github.com/0xhunter213
+
+category: pwn
+difficulty: medium
+
+description: |
+  > How many ret2 techniques do you know?
+  >
+  >[files](https://drive.google.com/file/d/18A7X8iX1_QHTNya2PtQEjoo9TuXuIfhh)
+
+  **Author** : 0xhunter213
+flags:
+  - AlphaCTF{4ll_u_n33d_15_just_m0r3_spac3}
+type: dynamic
+value: 500
+extra:
+  initial: 500
+  decay: 35 # leave it like this
+  minimum: 50
+
+connection_info: nc -v 35.228.220.66 1403
