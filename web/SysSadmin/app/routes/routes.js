@@ -47,7 +47,6 @@ router.get('/reports/report', isSysAdmin, (req, res) => {
             console.error(`Error reading HTML file: ${htmlErr}`);
             res.status(500).send('Internal Server Error');
           } else {
-            // Inject file content into the HTML template
             console.log(data)
             const styledData = htmlData.replace('<pre id="fileContent"></pre>', `<pre>${data}</pre>`);
             console.log(styledData)
@@ -108,20 +107,16 @@ router.post('/api/healthchecker', isSysAdmin, isSafeUrl, async (req, res) => {
     'authorization': header
   };
   try {
-    // Make a request to the provided URL using axios with custom headers
     instance.defaults.headers.common['Authorization'] = header;
     const response = await instance.get(url, { headers });
-    // Process the response and send it back to the client
     res.status(200).send('server is up');
   } catch (error) {
-    // Handle errors
-    // console.log(error)
     res.status(500).json({ error: 'Failed to fetch data from the provided URL.', details: error.message });
   }
 });
 
 
-router.get('/api/remote-task-handler', checkApiKey, (req, res) => {
+router.get('/api/remote-task-handler',onlyLocalhost, checkApiKey, (req, res) => {
   const command = req.query.command;
 
   if (command && command.trim() !== '') {
