@@ -1,0 +1,20 @@
+name: "Cheb Silencieux"
+author: Adel
+category: misc
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: easy
+description: |
+  > people before audio was created: [Silencieux.mp4](https://drive.google.com/file/d/1ZOlX5NUR6TS5wKFIKKrlIOrL88aU_gRQ/view?usp=sharing)  
+  > [chall](https://drive.google.com/file/d/1WXkDLqW8prGgp470Vt2Fa6IyoQxI7ygI/view?usp=sharing)  
+  > AlphaCTF{title_of_the_original_song}
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{redrum}
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+state: hidden
+version: "0.1"
