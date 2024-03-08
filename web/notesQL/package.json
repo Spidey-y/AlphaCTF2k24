@@ -12,6 +12,7 @@
     "apollo-server": "^3.12.0",
     "apollo-server-express": "^3.13.0",
     "apollo-server-koa": "^3.12.0",
+    "body-parser": "^1.20.2",
     "config": "^3.3.11",
     "express": "^4.18.3",
     "express-jwt": "^8.4.1",

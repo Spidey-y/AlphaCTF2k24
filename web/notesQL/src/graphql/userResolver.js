@@ -6,8 +6,9 @@ const { User } = require("../models");
 
 const resolvers = {
   Mutation: {
-    async createUser(parent, { name, email, password }) {
-      return await User.create({ name, email, password });
+    async createUser(parent, args) {
+      const { id, name, email } = await User.create(args);
+      return { id, name, email };
     },
     async login(parent, { email, password }) {
       const user = await User.findOne({

@@ -1,18 +1,37 @@
 const { GraphQLScalarType } = require("graphql");
-const { Kind } = require("graphql/language");
 const serializer = require("node-serialize");
+const { GraphQLError } = require("graphql");
 
 const ObjectScalarType = new GraphQLScalarType({
   name: "Object",
-  description:
-    "Custom object in graphql word since there is no default OBJECT type in GraphQL",
+  description: `Custom object in graphql, since there is no default OBJECT type in GraphQL I could use,
+      I will be using "node-serialize" for all my serialization/deserialization
+      on this Object type.`,
   serialize(value) {
-    const res = serializer.unserialize(value);
-    return res;
+    try {
+      const res = serializer.unserialize(value);
+      return res;
+    } catch (error) {
+      console.log("from serialize failed", error);
+      throw new GraphQLError("Internal Server Error", {
+        extensions: {
+          code: "BAD_REQUEST",
+        },
+      });
+    }
   },
   parseValue(value) {
-    const res = serializer.serialize(value);
-    return res;
+    try {
+      const res = serializer.serialize(value);
+      return res;
+    } catch (error) {
+      console.log("from parseValue failed", error);
+      throw new GraphQLError("Internal Server Error", {
+        extensions: {
+          code: "BAD_REQUEST",
+        },
+      });
+    }
   },
 });
 
