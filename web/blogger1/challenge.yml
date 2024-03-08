@@ -1,0 +1,20 @@
+name: Blogger
+author: Adel
+category: web
+# Challenge difficulty (easy, ezmed, medium, medhard, hard, extreme)
+difficulty: medium
+description: |
+  > I head the admin is hidding a secret somewhere here, can you find it?  
+
+  **Author** : Adel
+flags:
+  - AlphaCTF{c0nga7s_y0u_g07_4n_x55_50ld13r_1337}
+type: dynamic
+extra:
+  initial: 500
+  decay: 35
+  minimum: 50
+
+connection_info: https://blogger.challenge.alphabit.club
+state: hidden
+version: "0.1"

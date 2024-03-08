@@ -14,18 +14,17 @@ compose_paths_2=(
 )
 
 compose_paths_1=(
-  "./web/bigHEAD/docker-compose.yml"
-  "./web/fREe/docker-compose.yml"
-  "./web/weird/docker-compose.yml"
-  "./web/Inspector/docker-compose.yml"
-  "./web/PingPong1/docker-compose.yml"
-  "./web/PingPong2/docker-compose.yml"
-  "./misc/matrix/docker-compose.yml"
-  "./misc/Path/docker-compose.yml"
-  "./misc/Autobash/docker-compose.yml"
-  "./pwn/Crash/docker-compose.yml"
-  "./pwn/DeadBeef/docker-compose.yml"
-  "./pwn/ret2win/docker-compose.yml"
+  "./web/911/docker-compose.yml"
+  "./web/lost_admin/docker-compose.yml"
+  "./web/paths/docker-compose.yml"
+  "./web/Wakeup_Neo/docker-compose.yml"
+  "./web/blogger1/docker-compose.yml"
+  "./misc/prog1/docker-compose.yml"
+  "./misc/wizzard/docker-compose.yml"
+  "./misc/shell1/docker-compose.yml"
+  "./misc/shell2/docker-compose.yml"
+  "./pwn/ret2nowhere/docker-compose.yml"
+  "./pwn/return/docker-compose.yml"
 )
 
 compose_paths_3=(

@@ -42,7 +42,15 @@ app.post('/login', (req, res) => {
                 return res.render('./login', { error: 'Authentication failed', msg: '' });
             }
             if (row.password === password) {
-                res.send(process.env.FLAG);
+                const deleteQuery = 'DELETE FROM users WHERE username = ?';
+                db.run(deleteQuery, [username], (deleteErr) => {
+                    if (deleteErr) {
+                        console.error('Error deleting user:', deleteErr);
+                        return res.render('./login', { error: 'Internal error, please try again', msg: '' });
+                    }
+                    res.send(process.env.FLAG);
+                })
+
             }
             else {
                 return res.render('./login', { error: 'Authentication failed', msg: '' });

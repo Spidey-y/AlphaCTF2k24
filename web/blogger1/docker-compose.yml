@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  web:
+    build: .
+    image: xss
+    ports:
+      - 1110:5000
+    restart: always
+    mem_limit: 512M
+    mem_reservation: 128M
+    cpus: 1

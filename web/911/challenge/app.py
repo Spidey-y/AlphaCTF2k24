@@ -22,5 +22,5 @@ def s3cr3t(agent_type: str = Header(default="visitor", include_in_schema=False),
         return flag
     else:
         modified_value = "".join(
-            [i if i == "h4ck3r1337"[idx] else "*" for idx, i in enumerate(agent_type)])
+            [i if i == "h4ck3r1337"[idx%10] else "*" for idx, i in enumerate(agent_type)])
         return JSONResponse(content=f"Nice try hacker, agent {agent_type} not found in agents list", headers={"Agent-Type": modified_value})
