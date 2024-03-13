@@ -1,16 +1,16 @@
 version: '2'
 
 services:
-  crver:
-    image: crver_image
+  nodejs:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: crver_container
+    container_name: ez-http
+    environment:
+      - FLAG=AlphaCTF{H7tP_G0E5_PRrRrrrrRrrRRr}
     ports:
-      - "41340:1337"
+      - "51337:8000"
     restart: always
     mem_limit: 256M
     mem_reservation: 128M
     cpus: 1
-    

@@ -1,0 +1,10 @@
+version: '2'
+services:
+  server:
+    build: .
+    ports:
+      - 31338:1337
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 1

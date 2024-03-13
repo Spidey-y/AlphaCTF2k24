@@ -1,9 +1,11 @@
-FROM alpine:latest
+FROM greyltc/archlinux
+
+COPY ./app/ /app
 
 WORKDIR /app
 
-COPY ./app .
+RUN chmod +x ./Crver 
 
-RUN chmod +x Crver
+EXPOSE 1337
 
 CMD ["./Crver"]

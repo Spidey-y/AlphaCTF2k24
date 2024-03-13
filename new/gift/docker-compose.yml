@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  gift:
+    build: .
+    ports:
+      - "31447:1337"
+    cap_add:
+        - LINUX_IMMUTABLE
+    restart: always
+    mem_limit: 256M
+    mem_reservation: 128M
+    cpus: 1

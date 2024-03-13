@@ -14,8 +14,8 @@
 
 #define PORT 1337
 #define LISTENQ 20
-#define ADMIN_USERNAME "7jGkL2sPqA"
-#define ADMIN_PASSWORD "xY9bN4rH3F"
+#define ADMIN_USERNAME "zazreiogjrzeofjlzkkl"
+#define ADMIN_PASSWORD "roizaoijzfksdkljfioiaze"
 
 int list_s;
 
@@ -193,10 +193,10 @@ httpRequest parseRequest(char *msg){
 
     int isAdminRequest = (strcmp(filename, "public/admin.html") == 0);
 
-    char *authHeader = strstr(msg, "Authorization: ");
+    char *authHeader = strstr(msg, "Authorization: Basic ");
     
     if (authHeader != NULL && isAdminRequest) {
-        char *credentials = authHeader + strlen("Authorization: ");
+        char *credentials = authHeader + strlen("Authorization: Basic ");
 
         char *username = NULL;
         char *password = NULL;

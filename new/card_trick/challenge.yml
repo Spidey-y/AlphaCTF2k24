@@ -1,0 +1,23 @@
+name: card trick
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: crypto
+difficulty: medhard
+
+description: |
+  > i learned a new card trick let me show it to you 
+  >
+  > [chall.py](https://drive.google.com/drive/folders/1xyyJ89sp5ROUMuLOUpb0DNkRHlex0xys)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{D3_BRU1Jn_m4de_Brutef0RciNg_a_lot_be773r}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+connection_info: connection_info
