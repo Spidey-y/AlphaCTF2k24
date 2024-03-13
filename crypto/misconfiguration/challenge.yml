@@ -1,0 +1,23 @@
+name: misconfiguration
+author: F0DH1L
+author_link: https://github.com/fodhil-ben
+
+category: crypto
+difficulty: medium
+
+description: |
+  > more math.
+  >
+  >[files](https://drive.google.com/drive/folders/1eAssZxt38LqxFFuBTVtVyj3BGPl6tzWt)
+
+  **Author** : F0DH1L
+flags:
+  - AlphaCTF{Ex73nd3d_EUCLID3An_AlGOrI7Hm_1s_R3Ally_p0WERfULl}
+type: dynamic
+value: 500
+extra:
+    initial: 500
+    decay: ${DECAY} # leave it like this
+    minimum: 50
+
+
