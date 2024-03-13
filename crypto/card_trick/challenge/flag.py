@@ -1,0 +1,1 @@
+FLAG=b'AlphaCTF{D3_BRU1Jn_m4de_Brutef0RciNg_a_lot_be773r}'
